@@ -11,7 +11,6 @@ public class HomePageHeader extends BaseClass {
 
 	@Test(priority = 1)
 	public void verifyLogo() {
-		
 
 		logger = report.createTest("Verify Logo");
 
@@ -19,7 +18,7 @@ public class HomePageHeader extends BaseClass {
 
 		homePageHeader.HomePageLogo();
 
-		//logger.info("Logo Verified");
+		// logger.info("Logo Verified");
 
 	}
 
@@ -32,7 +31,7 @@ public class HomePageHeader extends BaseClass {
 
 		homePageHeader.clickLogo();
 
-		//logger.info("Logo is clickable");
+		// logger.info("Logo is clickable");
 
 	}
 
