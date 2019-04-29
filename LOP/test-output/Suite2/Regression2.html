@@ -1,0 +1,759 @@
+<html>
+<head>
+<title>TestNG:  Regression2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/59</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Apr 23 13:30:47 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (483 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.LorealPages_TestCases.HomePageHeader.launchApp()'><b>launchApp</b><br>Test class: com.LorealPages_TestCases.HomePageHeader</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.LorealPages.BaseClass.launchApp(BaseClass.java:47)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1846406218", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1846406218'><pre>java.lang.NullPointerException
+	at com.LorealPages.BaseClass.launchApp(BaseClass.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:521)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:140)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HomePageHeader@15bfd87</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.launchApp()'><b>launchApp</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairStyling.launchApp()'><b>launchApp</b><br>Test class: com.LorealPages_TestCases.HairStyling</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairStyling@5427c60c</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MakeUp.launchApp()'><b>launchApp</b><br>Test class: com.LorealPages_TestCases.MakeUp</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MakeUp@543e710e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.SkinCare.launchApp()'><b>launchApp</b><br>Test class: com.LorealPages_TestCases.SkinCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.SkinCare@6366ebe0</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairCare.launchApp()'><b>launchApp</b><br>Test class: com.LorealPages_TestCases.HairCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairCare@73d4cc9e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairColor.launchApp()'><b>launchApp</b><br>Test class: com.LorealPages_TestCases.HairColor</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairColor@80169cf</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MenExpert.launchApp()'><b>launchApp</b><br>Test class: com.LorealPages_TestCases.MenExpert</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MenExpert@3d0f8e03</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.BeautyGenius.launchApp()'><b>launchApp</b><br>Test class: com.LorealPages_TestCases.BeautyGenius</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.BeautyGenius@15b3e5b</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HomePageHeader.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HomePageHeader</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HomePageHeader@15bfd87</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HomePageHeader.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HomePageHeader</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HomePageHeader@15bfd87</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairStyling.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairStyling</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairStyling@5427c60c</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairStyling.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairStyling</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairStyling@5427c60c</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairStyling.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairStyling</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairStyling@5427c60c</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairStyling.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairStyling</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairStyling@5427c60c</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairStyling.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairStyling</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairStyling@5427c60c</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairStyling.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairStyling</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairStyling@5427c60c</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairStyling.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairStyling</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairStyling@5427c60c</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MakeUp.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MakeUp</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MakeUp@543e710e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MakeUp.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MakeUp</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MakeUp@543e710e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MakeUp.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MakeUp</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MakeUp@543e710e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MakeUp.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MakeUp</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MakeUp@543e710e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MakeUp.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MakeUp</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MakeUp@543e710e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MakeUp.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MakeUp</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MakeUp@543e710e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MakeUp.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MakeUp</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MakeUp@543e710e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.SkinCare.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.SkinCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.SkinCare@6366ebe0</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.SkinCare.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.SkinCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.SkinCare@6366ebe0</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.SkinCare.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.SkinCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.SkinCare@6366ebe0</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.SkinCare.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.SkinCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.SkinCare@6366ebe0</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.SkinCare.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.SkinCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.SkinCare@6366ebe0</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.SkinCare.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.SkinCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.SkinCare@6366ebe0</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.SkinCare.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.SkinCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.SkinCare@6366ebe0</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairCare.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairCare@73d4cc9e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairCare.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairCare@73d4cc9e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairCare.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairCare@73d4cc9e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairCare.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairCare@73d4cc9e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairCare.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairCare@73d4cc9e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairCare.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairCare@73d4cc9e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairCare.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairCare@73d4cc9e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairColor.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairColor</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairColor@80169cf</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairColor.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairColor</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairColor@80169cf</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairColor.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairColor</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairColor@80169cf</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairColor.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairColor</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairColor@80169cf</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairColor.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairColor</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairColor@80169cf</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairColor.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairColor</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairColor@80169cf</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairColor.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.HairColor</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairColor@80169cf</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MenExpert.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MenExpert</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MenExpert@3d0f8e03</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MenExpert.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MenExpert</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MenExpert@3d0f8e03</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MenExpert.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MenExpert</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MenExpert@3d0f8e03</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MenExpert.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MenExpert</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MenExpert@3d0f8e03</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MenExpert.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MenExpert</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MenExpert@3d0f8e03</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MenExpert.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MenExpert</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MenExpert@3d0f8e03</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MenExpert.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.MenExpert</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MenExpert@3d0f8e03</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.BeautyGenius.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.BeautyGenius</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.BeautyGenius@15b3e5b</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.BeautyGenius.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.BeautyGenius</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.BeautyGenius@15b3e5b</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.BeautyGenius.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.BeautyGenius</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.BeautyGenius@15b3e5b</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.BeautyGenius.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.BeautyGenius</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.BeautyGenius@15b3e5b</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.BeautyGenius.takeScreenshot()'><b>takeScreenshot</b><br>Test class: com.LorealPages_TestCases.BeautyGenius</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.BeautyGenius@15b3e5b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.clickMegamenu()'><b>clickMegamenu</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HomePageHeader.clickOnLogo()'><b>clickOnLogo</b><br>Test class: com.LorealPages_TestCases.HomePageHeader</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HomePageHeader@15bfd87</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.clickonHairCare()'><b>clickonHairCare</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.clickonHairColor()'><b>clickonHairColor</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.clickonHairStyling()'><b>clickonHairStyling</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.clickonInspireMe()'><b>clickonInspireMe</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.clickonMakeup()'><b>clickonMakeup</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.clickonNewMen()'><b>clickonNewMen</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.clickonSkinCare()'><b>clickonSkinCare</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.clickonTips()'><b>clickonTips</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MegaMenu.clickonTutorials()'><b>clickonTutorials</b><br>Test class: com.LorealPages_TestCases.MegaMenu</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MegaMenu@57f23557</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairStyling.verifyLoadMoreisClickable()'><b>verifyLoadMoreisClickable</b><br>Test class: com.LorealPages_TestCases.HairStyling</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairStyling@5427c60c</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MakeUp.verifyLoadMoreisClickable()'><b>verifyLoadMoreisClickable</b><br>Test class: com.LorealPages_TestCases.MakeUp</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MakeUp@543e710e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.SkinCare.verifyLoadMoreisClickable()'><b>verifyLoadMoreisClickable</b><br>Test class: com.LorealPages_TestCases.SkinCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.SkinCare@6366ebe0</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairCare.verifyLoadMoreisClickable()'><b>verifyLoadMoreisClickable</b><br>Test class: com.LorealPages_TestCases.HairCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairCare@73d4cc9e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairColor.verifyLoadMoreisClickable()'><b>verifyLoadMoreisClickable</b><br>Test class: com.LorealPages_TestCases.HairColor</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairColor@80169cf</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MenExpert.verifyLoadMoreisClickable()'><b>verifyLoadMoreisClickable</b><br>Test class: com.LorealPages_TestCases.MenExpert</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MenExpert@3d0f8e03</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HomePageHeader.verifyLogo()'><b>verifyLogo</b><br>Test class: com.LorealPages_TestCases.HomePageHeader</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HomePageHeader@15bfd87</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.BeautyGenius.verifybeautyGeniusHeader()'><b>verifybeautyGeniusHeader</b><br>Test class: com.LorealPages_TestCases.BeautyGenius</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.BeautyGenius@15b3e5b</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.BeautyGenius.verifybeautyGeniusIcon()'><b>verifybeautyGeniusIcon</b><br>Test class: com.LorealPages_TestCases.BeautyGenius</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.BeautyGenius@15b3e5b</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.BeautyGenius.verifybeautyGeniusLogo()'><b>verifybeautyGeniusLogo</b><br>Test class: com.LorealPages_TestCases.BeautyGenius</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.BeautyGenius@15b3e5b</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.BeautyGenius.verifybeautyGeniusRegistrationForm()'><b>verifybeautyGeniusRegistrationForm</b><br>Test class: com.LorealPages_TestCases.BeautyGenius</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.BeautyGenius@15b3e5b</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairCare.verifyhairCareAllProducts()'><b>verifyhairCareAllProducts</b><br>Test class: com.LorealPages_TestCases.HairCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairCare@73d4cc9e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairCare.verifyhairCareDescription()'><b>verifyhairCareDescription</b><br>Test class: com.LorealPages_TestCases.HairCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairCare@73d4cc9e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairCare.verifyhairCareHeader()'><b>verifyhairCareHeader</b><br>Test class: com.LorealPages_TestCases.HairCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairCare@73d4cc9e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairCare.verifyhairCareLoadMoreButton()'><b>verifyhairCareLoadMoreButton</b><br>Test class: com.LorealPages_TestCases.HairCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairCare@73d4cc9e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairCare.verifyhairCarePathPath()'><b>verifyhairCarePathPath</b><br>Test class: com.LorealPages_TestCases.HairCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairCare@73d4cc9e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairCare.verifyhairCareProductGrid()'><b>verifyhairCareProductGrid</b><br>Test class: com.LorealPages_TestCases.HairCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairCare@73d4cc9e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairColor.verifyhairColorAllProducts()'><b>verifyhairColorAllProducts</b><br>Test class: com.LorealPages_TestCases.HairColor</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairColor@80169cf</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairColor.verifyhairColorDescription()'><b>verifyhairColorDescription</b><br>Test class: com.LorealPages_TestCases.HairColor</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairColor@80169cf</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairColor.verifyhairColorHeader()'><b>verifyhairColorHeader</b><br>Test class: com.LorealPages_TestCases.HairColor</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairColor@80169cf</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairColor.verifyhairColorLoadMoreButton()'><b>verifyhairColorLoadMoreButton</b><br>Test class: com.LorealPages_TestCases.HairColor</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairColor@80169cf</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairColor.verifyhairColorPathPath()'><b>verifyhairColorPathPath</b><br>Test class: com.LorealPages_TestCases.HairColor</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairColor@80169cf</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairColor.verifyhairColorProductGrid()'><b>verifyhairColorProductGrid</b><br>Test class: com.LorealPages_TestCases.HairColor</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairColor@80169cf</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairStyling.verifyhairStyleAllProducts()'><b>verifyhairStyleAllProducts</b><br>Test class: com.LorealPages_TestCases.HairStyling</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairStyling@5427c60c</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairStyling.verifyhairStyleDescription()'><b>verifyhairStyleDescription</b><br>Test class: com.LorealPages_TestCases.HairStyling</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairStyling@5427c60c</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairStyling.verifyhairStyleHeader()'><b>verifyhairStyleHeader</b><br>Test class: com.LorealPages_TestCases.HairStyling</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairStyling@5427c60c</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairStyling.verifyhairStyleLoadMoreButton()'><b>verifyhairStyleLoadMoreButton</b><br>Test class: com.LorealPages_TestCases.HairStyling</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairStyling@5427c60c</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairStyling.verifyhairStylePath()'><b>verifyhairStylePath</b><br>Test class: com.LorealPages_TestCases.HairStyling</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairStyling@5427c60c</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.HairStyling.verifyhairStyleProductGrid()'><b>verifyhairStyleProductGrid</b><br>Test class: com.LorealPages_TestCases.HairStyling</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.HairStyling@5427c60c</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MakeUp.verifymakeUpAllProducts()'><b>verifymakeUpAllProducts</b><br>Test class: com.LorealPages_TestCases.MakeUp</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MakeUp@543e710e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MakeUp.verifymakeUpDescription()'><b>verifymakeUpDescription</b><br>Test class: com.LorealPages_TestCases.MakeUp</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MakeUp@543e710e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MakeUp.verifymakeUpHeader()'><b>verifymakeUpHeader</b><br>Test class: com.LorealPages_TestCases.MakeUp</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MakeUp@543e710e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MakeUp.verifymakeUpLoadMoreButton()'><b>verifymakeUpLoadMoreButton</b><br>Test class: com.LorealPages_TestCases.MakeUp</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MakeUp@543e710e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MakeUp.verifymakeUpPath()'><b>verifymakeUpPath</b><br>Test class: com.LorealPages_TestCases.MakeUp</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MakeUp@543e710e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MakeUp.verifymakeUpProductGrid()'><b>verifymakeUpProductGrid</b><br>Test class: com.LorealPages_TestCases.MakeUp</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MakeUp@543e710e</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MenExpert.verifymenExpertAllProducts()'><b>verifymenExpertAllProducts</b><br>Test class: com.LorealPages_TestCases.MenExpert</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MenExpert@3d0f8e03</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MenExpert.verifymenExpertDescription()'><b>verifymenExpertDescription</b><br>Test class: com.LorealPages_TestCases.MenExpert</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MenExpert@3d0f8e03</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MenExpert.verifymenExpertHeader()'><b>verifymenExpertHeader</b><br>Test class: com.LorealPages_TestCases.MenExpert</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MenExpert@3d0f8e03</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MenExpert.verifymenExpertLoadMoreButton()'><b>verifymenExpertLoadMoreButton</b><br>Test class: com.LorealPages_TestCases.MenExpert</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MenExpert@3d0f8e03</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MenExpert.verifymenExpertPathPath()'><b>verifymenExpertPathPath</b><br>Test class: com.LorealPages_TestCases.MenExpert</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MenExpert@3d0f8e03</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.MenExpert.verifymenExpertProductGrid()'><b>verifymenExpertProductGrid</b><br>Test class: com.LorealPages_TestCases.MenExpert</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.MenExpert@3d0f8e03</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.BeautyGenius.verifymenExpertProductGrid()'><b>verifymenExpertProductGrid</b><br>Test class: com.LorealPages_TestCases.BeautyGenius</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.BeautyGenius@15b3e5b</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.SkinCare.verifyskinCareAllProducts()'><b>verifyskinCareAllProducts</b><br>Test class: com.LorealPages_TestCases.SkinCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.SkinCare@6366ebe0</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.SkinCare.verifyskinCareDescription()'><b>verifyskinCareDescription</b><br>Test class: com.LorealPages_TestCases.SkinCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.SkinCare@6366ebe0</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.SkinCare.verifyskinCareHeader()'><b>verifyskinCareHeader</b><br>Test class: com.LorealPages_TestCases.SkinCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.SkinCare@6366ebe0</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.SkinCare.verifyskinCareLoadMoreButton()'><b>verifyskinCareLoadMoreButton</b><br>Test class: com.LorealPages_TestCases.SkinCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.SkinCare@6366ebe0</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.SkinCare.verifyskinCarePathPath()'><b>verifyskinCarePathPath</b><br>Test class: com.LorealPages_TestCases.SkinCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.SkinCare@6366ebe0</td></tr>
+<tr>
+<td title='com.LorealPages_TestCases.SkinCare.verifyskinCareProductGrid()'><b>verifyskinCareProductGrid</b><br>Test class: com.LorealPages_TestCases.SkinCare</td>
+<td></td>
+<td>0</td>
+<td>com.LorealPages_TestCases.SkinCare@6366ebe0</td></tr>
+</table><p>
+</body>
+</html>

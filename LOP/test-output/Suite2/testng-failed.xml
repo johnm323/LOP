@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite2]" parallel="none">
+  <test name="Regression2(failed)" parallel="none">
+    <classes>
+      <class name="com.LorealPages_TestCases.HomePageHeader">
+        <methods>
+          <include name="clickOnLogo"/>
+          <include name="launchApp"/>
+          <include name="verifyLogo"/>
+        </methods>
+      </class> <!-- com.LorealPages_TestCases.HomePageHeader -->
+      <class name="com.LorealPages_TestCases.BeautyGenius">
+        <methods>
+          <include name="verifybeautyGeniusHeader"/>
+          <include name="verifybeautyGeniusIcon"/>
+          <include name="verifybeautyGeniusLogo"/>
+          <include name="verifymenExpertProductGrid"/>
+          <include name="initSetup"/>
+          <include name="verifybeautyGeniusRegistrationForm"/>
+        </methods>
+      </class> <!-- com.LorealPages_TestCases.BeautyGenius -->
+      <class name="com.LorealPages_TestCases.MakeUp">
+        <methods>
+          <include name="verifymakeUpAllProducts"/>
+          <include name="verifymakeUpHeader"/>
+          <include name="verifyLoadMoreisClickable"/>
+          <include name="verifymakeUpProductGrid"/>
+          <include name="verifymakeUpPath"/>
+          <include name="verifymakeUpLoadMoreButton"/>
+          <include name="verifymakeUpDescription"/>
+        </methods>
+      </class> <!-- com.LorealPages_TestCases.MakeUp -->
+      <class name="com.LorealPages_TestCases.MenExpert">
+        <methods>
+          <include name="verifymenExpertDescription"/>
+          <include name="verifyLoadMoreisClickable"/>
+          <include name="verifymenExpertProductGrid"/>
+          <include name="verifymenExpertPathPath"/>
+          <include name="verifymenExpertLoadMoreButton"/>
+          <include name="verifymenExpertHeader"/>
+          <include name="verifymenExpertAllProducts"/>
+        </methods>
+      </class> <!-- com.LorealPages_TestCases.MenExpert -->
+      <class name="com.LorealPages_TestCases.MegaMenu">
+        <methods>
+          <include name="clickMegamenu"/>
+          <include name="clickonNewMen"/>
+          <include name="clickonTips"/>
+          <include name="clickonMakeup"/>
+          <include name="clickonTutorials"/>
+          <include name="clickonHairColor"/>
+          <include name="clickonInspireMe"/>
+          <include name="clickonSkinCare"/>
+          <include name="clickonHairCare"/>
+          <include name="clickonHairStyling"/>
+        </methods>
+      </class> <!-- com.LorealPages_TestCases.MegaMenu -->
+      <class name="com.LorealPages_TestCases.SkinCare">
+        <methods>
+          <include name="verifyskinCareAllProducts"/>
+          <include name="verifyskinCareHeader"/>
+          <include name="verifyskinCareLoadMoreButton"/>
+          <include name="verifyLoadMoreisClickable"/>
+          <include name="verifyskinCarePathPath"/>
+          <include name="verifyskinCareProductGrid"/>
+          <include name="verifyskinCareDescription"/>
+        </methods>
+      </class> <!-- com.LorealPages_TestCases.SkinCare -->
+      <class name="com.LorealPages_TestCases.HairStyling">
+        <methods>
+          <include name="verifyhairStyleDescription"/>
+          <include name="verifyhairStylePath"/>
+          <include name="verifyLoadMoreisClickable"/>
+          <include name="verifyhairStyleHeader"/>
+          <include name="verifyhairStyleProductGrid"/>
+          <include name="verifyhairStyleAllProducts"/>
+          <include name="verifyhairStyleLoadMoreButton"/>
+        </methods>
+      </class> <!-- com.LorealPages_TestCases.HairStyling -->
+      <class name="com.LorealPages_TestCases.HairCare">
+        <methods>
+          <include name="verifyhairCareDescription"/>
+          <include name="verifyhairCareLoadMoreButton"/>
+          <include name="verifyhairCareAllProducts"/>
+          <include name="verifyhairCareHeader"/>
+          <include name="verifyhairCarePathPath"/>
+          <include name="verifyLoadMoreisClickable"/>
+          <include name="verifyhairCareProductGrid"/>
+        </methods>
+      </class> <!-- com.LorealPages_TestCases.HairCare -->
+      <class name="com.LorealPages_TestCases.HairColor">
+        <methods>
+          <include name="verifyhairColorAllProducts"/>
+          <include name="verifyhairColorHeader"/>
+          <include name="verifyhairColorPathPath"/>
+          <include name="verifyhairColorLoadMoreButton"/>
+          <include name="verifyhairColorProductGrid"/>
+          <include name="verifyhairColorDescription"/>
+          <include name="verifyLoadMoreisClickable"/>
+        </methods>
+      </class> <!-- com.LorealPages_TestCases.HairColor -->
+    </classes>
+  </test> <!-- Regression2(failed) -->
+</suite> <!-- Failed suite [Suite2] -->

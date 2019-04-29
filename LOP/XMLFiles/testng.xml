@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="LOPSuite" verbose="1">
+	<test name="LOPTest1">
+		<classes>
+		<class name="com.LorealPages_TestCases.HomePageHeader" />
+		<class name="com.LorealPages_TestCases.MegaMenu" />
+	
+		</classes>
+</test>
+</suite>
+
